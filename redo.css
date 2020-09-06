@@ -1,0 +1,160 @@
+    body {
+        font-family: monospace;
+        background: #E1F7F5;
+        color: #2E4425;
+    }
+    
+    .container {
+        position: absolute;
+        height: 550pt;
+        width: 800pt;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #ds {
+        position: absolute;
+        transform: translateX(-75%);
+        top: -10%;
+        width: 820px;
+    }
+    
+    .sprite1 {
+        width: 70px;
+        position: absolute;
+        z-index: 5;
+        left: 45%;
+        top: 35%;
+        overflow: hidden;
+    }
+    
+    .chimchar {
+        width: 115px;
+        animation: moveSprite1 0.7s steps(2) infinite;
+    }
+    
+    @keyframes moveSprite1 {
+        from {
+            transform: translate3d(5px, 0, 0);
+        }
+        to {
+            transform: translate3d(-100%, 0, 0)
+        }
+    }
+    
+    .sprite2 {
+        width: 70px;
+        position: absolute;
+        overflow: hidden;
+        z-index: 5;
+        top: 33%;
+        left: 50%;
+    }
+    
+    .dawn {
+        width: 150px;
+        animation: moveSprite2 0.7s steps(2) infinite;
+    }
+    
+    @keyframes moveSprite2 {
+        from {
+            transform: translate3d(0px, 0, 0)
+        }
+        to {
+            transform: translate3d(-100%, 0, 0)
+        }
+    }
+    
+    #words {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .title1 {
+        position: absolute;
+        z-index: 3;
+        font-size: 15px;
+        top: 69%;
+        left: 45.5%;
+    }
+    
+    .title {
+        position: absolute;
+        text-align: center;
+        vertical-align: middle;
+        z-index: 3;
+        font-size: 23px;
+        top: 74%;
+        left: 43.7%;
+    }
+    
+    .vers {
+        position: absolute;
+        top: 79%;
+        left: 46.5%;
+        z-index: 3;
+        font-size: 15px;
+    }
+    
+    .scene {
+        position: absolute;
+        width: 370px;
+        height: 270px;
+        left: 35%;
+        top: 8%;
+    }
+    
+    .poketch {
+        position: relative;
+        width: 370px;
+        height: 270px;
+        /*transform: translateX(188%);*/
+        left: 19%;
+        transform: translateY(69%);
+    }
+    
+    .buttons {
+        position: relative;
+    }
+    
+    #play {
+        position: relative;
+        cursor: pointer;
+        width: 70px;
+        z-index: 3;
+        right: 250%;
+        transform: translateY(180%);
+    }
+    
+    #forward {
+        position: absolute;
+        cursor: pointer;
+        width: 70px;
+        z-index: 3;
+        right: 155%;
+        top: 160%;
+    }
+    
+    #backward {
+        position: absolute;
+        cursor: pointer;
+        z-index: 3;
+        width: 70px;
+        right: 420%;
+        top: 160%;
+    }
+    /*
+    #backward {
+        position: relative;
+        cursor: pointer;
+        width: 70px;
+        z-index: 3;
+    }
